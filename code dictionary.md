@@ -1,11 +1,11 @@
 # numpy
 
-**np.c_ np.r_**
+### np.c_ np.r_
   
  np.c_is to connect two matrices by column like concat() in pandas
  np.r_is to connect two matrices by row like merge() in pandas
   
-### ex:
+**ex:**
 a = np.array([1, 2, 3])
 b = np.array([4, 5, 6])
 c = np.c_[a,b]
@@ -31,12 +31,12 @@ print(np.c_[c,a])
  [3 6 3]]
  ```
 
-**np.linspace**
+### np.linspace
 numpy.linspace(start, stop, num = 50, endpoint = True, retstep = False, dtype = None)
 
 Generation of Equivariance Sequence
 
-### ex:
+**ex:**
 ```
 python
 
@@ -48,3 +48,27 @@ array([ 0.,  1.,  2.])
 np.linspace(0, 1, num = 4, dtype = 'float32')  # if you set the dtype、it would be float32 or int or float64
 array([ 0.        ,  0.33333334,  0.66666669,  1.        ]
 ```
+
+
+### np.meshgrid
+Return coordinate matrices from coordinate vectors
+
+![](https://chaopei.github.io/images/posts/python/meshgrid.png)
+
+```
+ x = np.linspace(0, 1, 3)
+ # x = array([0, 0.5, 1])
+ 
+ y = np.linspace(0, 1, 2) 
+ # y = array([0, 1])
+ 
+>>> xv, yv = np.meshgrid(x, y)
+>>> xv
+array([[ 0. ,  0.5,  1. ],
+       [ 0. ,  0.5,  1. ]])
+>>> yv
+array([[ 0.,  0.,  0.],
+       [ 1.,  1.,  1.]])
+```
+
+
