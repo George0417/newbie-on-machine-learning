@@ -1,4 +1,5 @@
 # numpy
+
 ### 1.np.c_ np.r_
   
  np.c_is to connect two matrices by column like concat() in pandas
