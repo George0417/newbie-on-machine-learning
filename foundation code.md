@@ -26,14 +26,13 @@ list1 = [1, 2, 3]
 list2 = [4, 5, 6]
 for (a, b) in zip(list1, list2):   
 #loop list1,list2
-
 print a,b
 ... 
 1 4
 2 5
 3 6
 
-
+*****************************
 list3 = [7, 8]
 for (a, b) in zip(list1, list3):   
 #Matched  with fewer elements list3
@@ -42,6 +41,7 @@ print a,b
 1 7
 2 8
 
+******************************
 #Column conversion
  list4 = [
 ...   [1, 2, 3],
