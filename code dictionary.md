@@ -1,6 +1,7 @@
 # numpy
-
-### np.c_ np.r_
+```
+diff
++・np.c_ np.r_
   
  np.c_is to connect two matrices by column like concat() in pandas
  np.r_is to connect two matrices by row like merge() in pandas
@@ -25,3 +26,4 @@ print(np.c_[c,a])
  [2 5 2]
  [3 6 3]]
 ```  
+```
