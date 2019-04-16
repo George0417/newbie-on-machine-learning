@@ -72,3 +72,13 @@ array([[ 0.,  0.,  0.],
 ```
 
 
+### np.flatten() 
+convert the matrix to (1,X),but the return of flatten()is the copy of array
+
+![](https://upload-images.jianshu.io/upload_images/6445182-684d925e66cdfffe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/331/format/webp)
+
+
+### np.ravel()
+convert the matrix to (1,X),but the return of flatten()is the inital of array
+
+![](https://upload-images.jianshu.io/upload_images/6445182-cae7edd6227f9751.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/323/format/webp)
