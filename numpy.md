@@ -116,4 +116,11 @@ array([[19,2,5],
       [[1,2,8],
       [[10,2,4]], dtype=’unit8’)
 
+###np.arange(start,stop,step,dtype)
+   Values are generated within the half-open interval[start,stop)
+   
+**ex**
+>np.arange(7)
+array([1,2,3,4,5,6])
+   >
 
