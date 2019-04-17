@@ -55,3 +55,14 @@ print a,b,c
 2 5 8
 3 6 9
 ```
+
+### copy
+```
+#a shallow copy
+-a=b
+-a=b.view()
+
+#a deep copy
+a=np.copy(b)
+
+```
