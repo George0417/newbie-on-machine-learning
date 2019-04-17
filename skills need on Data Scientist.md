@@ -5,12 +5,6 @@
     "- Analyze,
     "- Visualize"
 
-### Application of IMQAV,
-    "- Organization,
-    "- Architecture,
-    "- Set of Tasks"
-
-
 ### Ingest,
     "Ingestion is a set of software engineering techniques to adapt high volumes of data that arrive rapidly (often via streaming).  ,
     "- Kafka,
