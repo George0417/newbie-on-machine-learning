@@ -44,8 +44,9 @@ array([ 0.,  1.,  2.])
 
  ----------------------------------------------
  
-np.linspace(0, 1, num = 4, dtype = 'float32')  # if you set the dtype、it would be float32 or int or float64
-array([ 0.        ,  0.33333334,  0.66666669,  1.        ]
+h=np.linspace(0, 1, num = 4, retstep_True,dtype = 'float32')  # if you set the dtype、it would be float32 or int or float64
+(array([ 0.        ,  0.33333334,  0.66666669,  1.        ]),0.3333)
+h[1]=0.3333
 ```
 
 
@@ -131,5 +132,91 @@ array([[19,2,5],
 np.arange(7)
 
 array([1,2,3,4,5,6])
+
+np.arange(10，23，5)
+
+array([0，15，20])
+
+np.arange(26，step=5)
+
+array([0，5,10,15,20,15])
+
 ```   
 
+### np.zeros(),np.ones()
+
+**ex**
+```
+np.zero(3,2)
+array([[0.,0.],
+       [0.,0.],
+       [0.,0.]])
+
+```
+```
+np.zero(2,3,2) 2 means two group,3 means three rows,2 means two columns 
+array([[0.,0.],
+       [0.,0.],
+       [0.,0.]]
+       
+       [[0.,0.],
+       [0.,0.],
+       [0.,0.]])
+
+```
+### Two dimensional arrays
+
+**ex**
+```
+my_array=np.arange(10)
+my_array.shape=(2,5)
+my_array
+
+array([[0,1,2,3,4],
+       [5,6,7,8,9]])
+
+""""""""""""""""""""""""""""
+my_array[1]
+array([5,6,7,8,9])
+
+my_array[row,column]
+       
+```       
+
+### Boolean Mask Arrays
+
+**ex**
+```
+my_vector=np.array([-17,-4,0,2,21,37,105])
+zero_mod_7_mask=0==(my_vector % 7)
+zero_mod_7_mask
+
+array([False,False,True,False,True,False,true]，dytype=bool)
+
+sub_array=my_vector[zero_mod_7_mask]
+arrray([0,21,105])
+
+```
+
+### np.logical_and()
+**ex**
+```
+positive_test=my_vector > 0
+combined_mask=np.logical_and(zero_mod_7_mask,positive_test)
+array([False,False,False,False,True,False,True],dytype=bool)
+
+```
+
+### np.rec.array()
+
+**ex**
+```
+person_record_array=np.rec.array([(`Delat`,73,205,34),(`Alpha`,65,112,23)],dtype=person_data_def)
+
+rec.array([(b`Delta`,73,205,34),(b`alpha`,65,112,23)],
+dtype=[(`name`,`s6`),（`height`,`f8`）,(`weight`,``f8),(`age`,`i8`)])
+
+person_record_array[0].age
+34
+
+```
