@@ -1,45 +1,28 @@
-{
- "cells": [
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "# NumPy, Data Science, and IMQAV\n",
+
+    # NumPy, Data Science, and IMQAV\n",
     "- Ingest\n",
     "- Model\n",
     "- Query\n",
     "- Analyze\n",
     "- Visualize"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "## Application of IMQAV\n",
+
+    ### Application of IMQAV\n",
     "- Organization\n",
     "- Architecture\n",
     "- Set of Tasks"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "## Ingest\n",
+  
+
+
+    ### Ingest\n",
     "Ingestion is a set of software engineering techniques to adapt high volumes of data that arrive rapidly (often via streaming).  \n",
     "- Kafka\n",
     "- RabbitMQ\n",
     "- Fluentd\n",
     "- Sqoop\n",
     "- Kinesis (AWS)"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "## Model\n",
+
+
+    ### Model\n",
     "Modeling is a set of data architecture techniques to create data storage that is appropriate for a particular domain.\n",
     "- Relational\n",
     "    - MySQL\n",
@@ -61,13 +44,8 @@
     "    - Neo4J\n",
     "    - OrientDB\n",
     "    - ArangoDB"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "## Query\n",
+
+   ### Query\n",
     "Query refers to extracting data (from storage) and modifying that data to accommodate anomalies such as missing data.  \n",
     "- Batch\n",
     "    - MapReduce\n",
@@ -81,15 +59,10 @@
     "    - Storm\n",
     "    - Spark Streaming\n",
     "    - Samza"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "## Analyze\n",
+
+    ### Analyze\n",
     "Analyze is a broad category that includes techniques from computer science, mathematical modeling, artificial intelligence, statistics, and other disciplines.\n",
-    "## NumPy is included within 'Analyze'\n",
+    ### NumPy is included within 'Analyze'\n",
     "- Statistics\n",
     "    - SPSS\n",
     "    - SAS\n",
@@ -107,14 +80,8 @@
     "       - SparkML\n",
     "    - Interactive\n",
     "        - scikit-learn\n",
-    "\n"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "## Visualize\n",
+
+    ### Visualize\n",
     "Visualize refers to transforming data into visually attractive and informative formats.\n",
     "- matplotlib\n",
     "- seaborn\n",
@@ -125,37 +92,4 @@
     "- Leaflet\n",
     "- Highcharts\n",
     "- Kibana"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {
-    "collapsed": true
-   },
-   "outputs": [],
-   "source": []
-  }
- ],
- "metadata": {
-  "kernelspec": {
-   "display_name": "Python 3",
-   "language": "python",
-   "name": "python3"
-  },
-  "language_info": {
-   "codemirror_mode": {
-    "name": "ipython",
-    "version": 3
-   },
-   "file_extension": ".py",
-   "mimetype": "text/x-python",
-   "name": "python",
-   "nbconvert_exporter": "python",
-   "pygments_lexer": "ipython3",
-   "version": "3.5.1"
-  }
- },
- "nbformat": 4,
- "nbformat_minor": 0
-}
+
