@@ -2,8 +2,8 @@
 
 ### np.c_ np.r_
   
- np.c_is to connect two matrices by column like concat() in pandas
- np.r_is to connect two matrices by row like merge() in pandas
+ >np.c_is to connect two matrices by column like concat() in pandas
+ >np.r_is to connect two matrices by row like merge() in pandas
   
 **ex:**
 a = np.array([1, 2, 3])
@@ -33,8 +33,7 @@ print(np.c_[c,a])
 
 ### np.linspace
 numpy.linspace(start, stop, num = 50, endpoint = True, retstep = False, dtype = None)
-
-Generation of Equivariance Sequence
+>Generation of Equivariance Sequence
 
 **ex:**
 ```
@@ -51,7 +50,7 @@ array([ 0.        ,  0.33333334,  0.66666669,  1.        ]
 
 
 ### np.meshgrid
-Return coordinate matrices from coordinate vectors
+>Return coordinate matrices from coordinate vectors
 
 ![](https://chaopei.github.io/images/posts/python/meshgrid.png)
 
@@ -73,36 +72,41 @@ array([[ 0.,  0.,  0.],
 
 
 ### np.flatten() 
-convert the matrix to (1,X),but the return of flatten()is the copy of array
+>convert the matrix to (1,X),but the return of flatten()is the copy of array
 
 ![](https://upload-images.jianshu.io/upload_images/6445182-684d925e66cdfffe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/331/format/webp)
 
 
 ### np.ravel()
-convert the matrix to (1,X),but the return of flatten()is the inital of array
+>convert the matrix to (1,X),but the return of flatten()is the inital of array
 
 ![](https://upload-images.jianshu.io/upload_images/6445182-cae7edd6227f9751.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/323/format/webp)
 
 
 ### np.random.randn()
-Generate the random data with normal distribution 
-which in ()should be int
+>Generate the random data with normal distribution 
+>which in ()should be int
 
 **ex**
+```
 np.random.randn(3,2)
 array([[1.25,2.55],
       [[1.25,2.55],
       [[1.25,2.55]])
+```
+
+
 
 ### np.random.rand()
-Generate the random data with normal distribution  [0,1)
+>Generate the random data with normal distribution  [0,1)
 
 **ex**
+```
 np.random.rand(3,2)
 array([[0.25,0.55],
       [[0.25,0.55],
       [[0.25,0.55]])
-      
+```      
 
 ### numpy.random.randint(low, high=None, size=None, dtype=’l’)  
 low—–min 
@@ -111,16 +115,21 @@ size—–(2,2)matrix
 dtype— format np.int
 
 **ex**
+```
 numpy.random.randint(1, 20, size=(3,3), dtype=’unit8’) 
 array([[19,2,5],
       [[1,2,8],
       [[10,2,4]], dtype=’unit8’)
 
+```
+
 ###np.arange(start,stop,step,dtype)
-   Values are generated within the half-open interval[start,stop)
+>Values are generated within the half-open interval[start,stop)
    
 **ex**
->np.arange(7)
+```
+np.arange(7)
+
 array([1,2,3,4,5,6])
-   >
+```   
 
