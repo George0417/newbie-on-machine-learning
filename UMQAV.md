@@ -1,4 +1,4 @@
-# NumPy, Data Science, and IMQAV,
+#  Data Science,
     "- Ingest,
     "- Model,
     "- Query,
@@ -60,8 +60,6 @@
 
 ### Analyze,
     "Analyze is a broad category that includes techniques from computer science, mathematical modeling, artificial intelligence, statistics, and other disciplines.,
-    
-### NumPy is included within 'Analyze',
     "- Statistics,
     "    - SPSS,
     "    - SAS
