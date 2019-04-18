@@ -292,3 +292,66 @@ c=array([[1,2],[3,4],[5,6]])
 
 ```
 
+### np.fliplr()& np.flipud() & np.roll() &np.rot90()
+**ex**
+```
+a=array([[1,2,3,4],
+         [5,6,7,8]],
+         
+         [[9,10,11,12],
+         [13,14,15,16]])
+         
+        
+np.fliplr(a)
+
+array([[8,7,6,5],
+       [4,3,2,1]]
+       
+       [[16,15,14,13],
+        [12,11,10,9]])
+
+np.flipud(a)
+
+array([[16,15,14,13],
+       [12,11,10,9]]
+       
+       [[8,7,6,5],
+       [4,3,2,1]])
+       
+np.roll(a,2)  #n means put the n number of value infront,-n means put the fornt number to the end
+a=array([[15,16,1,2],
+         [3,4,5,6]],
+         
+         [[7,8,9,10],
+         [11,12,13,14]])
+         
+ np.rot90(a)    
+ a=array([[4,8,12,16],
+         [3,7,11,15]],
+         
+         [[2,6,10,14],
+         [1,5,9,13]])
+         
+ 
+
+```
+
+### np.transpose()
+**ex**
+```
+a=array([[1,2,3,4],
+         [5,6,7,8]])
+         
+np.transpose(a)
+
+array([[1,5],
+       [2,6]
+       [3,7]
+       [4,8]])
+       
+```
+> use np.transpose to permute all the axes at once
+> use np.swapaxes to swap any two axes
+> use np. rollaxis to rotate  the axes
+
+
