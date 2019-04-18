@@ -355,3 +355,15 @@ array([[1,5],
 > use np. rollaxis to rotate  the axes
 
 
+### np.tile() #repeat n times of the matrix
+**ex**
+```
+a=array([1,2,3,4])
+np.tile(a,3).reshape(3,4)
+
+array([1,2,3,4]
+      [1,2,3,4]
+      [1,2,3,4])
+
+```
+
