@@ -279,4 +279,14 @@ person_record_array[0].age
 
 ```
 
+### np.concatenate()
+**ex**
+```
+a=array([[1,2],[3,4]])
+b=array([[5,6]])
+c=np.concatenate((a,b),axis=0)
+
+c=array([[1,2],[3,4],[5,6]])
+
+```
 
