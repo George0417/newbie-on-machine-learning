@@ -83,6 +83,8 @@ array([[ 0.,  0.,  0.],
 
 ![](https://upload-images.jianshu.io/upload_images/6445182-cae7edd6227f9751.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/323/format/webp)
 
+a.shape
+(4,0)
 
 ### np.random.randn()
 >Generate the random data with normal distribution 
