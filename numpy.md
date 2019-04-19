@@ -2,8 +2,8 @@
 
 ### np.c_ np.r_
   
- >np.c_is to connect two matrices by column like concat() in pandas
- >np.r_is to connect two matrices by row like merge() in pandas
+ >np.c_is to connect two matrices by column like concat() in pandas  #c---cloumn
+ >np.r_is to connect two matrices by row like merge() in pandas   #r----row
   
 **ex:**
 a = np.array([1, 2, 3])
