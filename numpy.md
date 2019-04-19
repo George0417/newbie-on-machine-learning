@@ -382,3 +382,7 @@ np.diff(a,n=3)
 array([0])
 ```
 
+
+### np.__version__
+>test the version of np
+
