@@ -367,3 +367,18 @@ array([1,2,3,4]
 
 ```
 
+### np.diff()
+**ex**
+```
+a=array([1,7,19,37])
+
+np.diff(a)
+array([6,12,18])
+
+np.diff(a,n=2)
+array([6,6])
+
+np.diff(a,n=3)
+array([0])
+```
+
