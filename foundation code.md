@@ -66,3 +66,13 @@ print a,b,c
 a=np.copy(b)
 
 ```
+
+### [:],[::] difference
+>a[i:j:s] i = start, j= end, s=step
+>a[i:j] i = start, j= end, s=1
+```
+a = [0,1,2,3,4,5,6,7,8,9]
+a[::2]=0
+a = [0,1,2,0,4,5,0,7,8,0]
+
+```
