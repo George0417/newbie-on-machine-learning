@@ -1,4 +1,4 @@
-# Process of NLP
+# Pipeline of NLP
 ### download NLTK
 ### manipulate
 
@@ -36,3 +36,12 @@ print("out of {} rows,{} are spam".format(len(fullcorpus),len(fullcorpus[fullcor
 print("Number of null in label: {} ".format(fullcorpus["label"].isnull().sum()))
 # first calculcate the number of true if null is in label, then sum the number of True
 ```
+### clean text
+1.regular expression (punctuation)
+2.remove stop words# stop words mean "you" ,"the","and" frequency and not important words
+
+### Vectorize--convert to numeric form
+
+### Machine learning algorithm--fit/train model
+
+###implement it within whatever framework
