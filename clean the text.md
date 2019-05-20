@@ -129,3 +129,12 @@ result
 goose
 goose
 ```
+
+```
+def lemmatizing (tokenized_text):
+    text=[wn.lemmatize(word)for word in  tokenized_text]
+    return text
+data["body_text_lemmatized"]=data["body_text_nostop"].apply(lambda x: lemmatizing(x))
+
+data.head()
+```
