@@ -17,8 +17,11 @@ data["body_text_clean"]=data["body_text"].apply(lambda x: remove_punct(x))
 data.head()
 
 '''
->label              body_text                            body_text_clean
+'''
+label              body_text                            body_text_clean
  ham      I've been searching for % the right words     Ive beensearching for the right words
+ 
+'''
  
  # Tokenization
  > Symbolization ---splitted by symbol
@@ -35,10 +38,11 @@ data.head()
  
  data.head()
 '''     
-
->label              body_text                            body_text_clean                                   body_text_tokenized
- ham      I've been searching for % the right words     Ive been searching for the right words     [Ive,been,searching,for,the,right,words]
+'''
+ label              body_text                            body_text_clean                                   body_text_tokenized
+ ham      I've been searching for % the right words     Ive been searching for the right words  [Ive,been,searching,for,the,right,words]
  
+ '''
  # Remove stopwords
  
  **Ex4**
@@ -55,8 +59,12 @@ data["body_text_nostop"]=data["body_text_tokenized"].apply(lambda x: remove_stop
 
 data.head()
  '''
+''' 
+label              body_text                            body_text_clean                                                     
+ ham      I've been searching for % the right words     Ive been searching for the right words  
  
->label              body_text                            body_text_clean                                   body_text_tokenized                          body_text_nostop
- ham      I've been searching for % the right words     Ive been searching for the right words     [Ive,been,searching,for,the,right,words]        [Ive,searching,right,words]
+               body_text_tokenized                       body_text_nostop
+ [Ive,been,searching,for,the,right,words]        [Ive,searching,right,words]
  
+ '''
  
