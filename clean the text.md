@@ -1,5 +1,4 @@
 # Removing punction
-**Ex1**
 
 ### punctuation---example of punctuation
 ```
@@ -8,7 +7,6 @@ string.punctuation
 '!"#$%&()'+-/.;:'
 ```
 
-**Ex2** 
 ```
 def remove_punct(text):
    text_nopunct="".join([char for char in text if char not in string.punctuation])
@@ -29,7 +27,7 @@ label              body_text                            body_text_clean
  # Tokenization
  ### Symbolization ---splitted by symbol
  
- **Ex3**
+
 ```
  import re
  
@@ -49,7 +47,6 @@ result
 ```
  # Remove stopwords
  
- **Ex4**
  
  ### example of stopwords
  import nltk
@@ -72,4 +69,63 @@ label              body_text                                         body_text_c
            [Ive,been,searching,for,the,right,words]               [Ive,searching,right,words]
  
 ```
- 
+# Stem (faster as it chops off the end of word using heuristics)
+### crudely choppingoff the end of the word to leave only the  base
+
+```
+import nltk
+ps=nltk.PorterStemmer()
+**EX**
+
+PS.stem("grows")
+PS.stem("growing")
+PS.stem("grow")
+
+result
+grow
+```
+```
+def stemming(tokenized_text):
+   text=[ps.stem(word) for word in tokenized_text)
+   return text
+
+data["body_text_stemmed"]=data["body_text_nostop"].apply(lambda x: stemming(x))
+
+data.head()
+```
+result
+```
+           body_text_nostop                              body_text_stemmed
+    [Ive,searching,right,words]                       [Ive,searching,right,words] 
+```
+
+# Lemmatizing (more accurate)
+
+```
+**Ex1**
+import nltk
+ps=nltk.PorterStemmer()
+wn=nltk.WordNetLemmatizer()
+
+print(ps.stem("goose"))
+print(ps.stem("geese"))
+```
+
+result
+```
+gose
+gese
+```
+
+
+```
+**Ex2**
+print(wn.lemmatize("goose"))
+print(wn.lemmatize("geese"))
+```
+
+result
+```
+goose
+goose
+```
