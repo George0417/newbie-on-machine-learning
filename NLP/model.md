@@ -81,8 +81,10 @@ pd.DataFrame(cv_fit.cv_results_).sort_values("mean_test_score",ascending=False)[
 ### using the best parameter to value precision/recall/Accuracy to compare both model
 
 ```
+#test time of model test
 import time
 start=time.time()
 end=time.time()
 fit_time=(end-start)
+
 ```
