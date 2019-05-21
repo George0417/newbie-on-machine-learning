@@ -1,6 +1,6 @@
 #model of machine learning
 
-### Regression Algorithms
+### 1.Regression Algorithms
 >Regression algorithm is a kind of algorithm that obtains the best combination of input features
  by minimizing the difference between the predicted value and the actual result value.
  
@@ -11,7 +11,7 @@
 + Locally Estimated Scatterplot Smoothing (LOESS)
 + Multivariate Adaptive Regression Splines (MARS
 
-### Instance-based Algorithms
+### 2.Instance-based Algorithms
 >Generally, the similarity criterion is used to compare the similarity
 between the predicted sample and the original sample, and then predict the results 
 
@@ -20,7 +20,7 @@ between the predicted sample and the original sample, and then predict the resul
 + Self-Organizing Map (SOM)
 + Locally Weighted Learning (LWL)
 
-### Decision Tree Algorithms
+### 3.Decision Tree Algorithms
 >Based on the characteristics of raw data, a tree containing many decision paths is constructed.
 
 + Classification and Regression Tree (CART)
@@ -30,7 +30,7 @@ between the predicted sample and the original sample, and then predict the resul
 + M5
 + Conditional Decision Trees
 
-### Bayesian Algorithms
+### 4.Bayesian Algorithms
 >In problems like classification or regression , an algorithm based on Bayesian principle is implicitly used.
 
 + Naive Bayes
@@ -40,7 +40,7 @@ between the predicted sample and the original sample, and then predict the resul
 + Bayesian Belief Network (BBN)
 + Bayesian Network (BN)
 
-### Clustering Algorithms
+### 5.Clustering Algorithms
 >the clustering algorithm  gather input samples into "data clusters" 
 around some centers to discover some rules of data distribution structure.
 
@@ -49,28 +49,28 @@ around some centers to discover some rules of data distribution structure.
 + Expectation Maximisation (EM)
 
 
-### Association Rule Learning Algorithms(recommendation model)
+### 6.Association Rule Learning Algorithms(recommendation model)
 >It tries to extract rules that best explain the observed association between training samples, 
 and acquire knowledge of dependencies or associations between an event and other events.
 
 + Apriori algorithm
 + Eclat algorithm
 
-### Artificial Neural Network Algorithms
+### 7.Artificial Neural Network Algorithms
 
 + Perceptron
 + Back-Propagation
 + Radial Basis Function Network (RBFN)
 
 
-### Deep Learning Algorithms
+### 8.Deep Learning Algorithms
 + Deep Boltzmann Machine (DBM)
 + Deep Belief Networks (DBN)
 + Convolutional Neural Network (CNN)
 + Stacked Auto-Encoders
 
 
-### Dimensionality Reduction Algorithms
+### 9.Dimensionality Reduction Algorithms
 >Dimensional algorithms are trying to summarize and describe
 most of the original information with less information (lower dimensional information).
 
@@ -84,7 +84,7 @@ most of the original information with less information (lower dimensional inform
 + Quadratic Discriminant Analysis (QDA)
 + Flexible Discriminant Analysis (FDA)
 
-### Ensemble Algorithms
+### 10.Ensemble Algorithms
 >It usually combines several simple weak machine learning algorithms to make more reliable decisions.
 
 + Random Forest
