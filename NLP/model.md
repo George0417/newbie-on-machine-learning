@@ -6,6 +6,7 @@
 ### conbine the feature
 ```
 X_feature=pd.concat([data["body_len"],data["punct%"],pd.DataFrame(X_tfidf.toarray())],axis=1)
+X_train_vect=pd.concat([X_train["body_len","punct%"]].reset_index(drop=True),pd.DataFrame(X_tfidf.toarray())],axis=1)
 ```
 ### build Grid-search
 ```
