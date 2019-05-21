@@ -39,10 +39,11 @@ print("Number of null in label: {} ".format(fullcorpus["label"].isnull().sum()))
 ### 5. clean text
 1.regular expression (punctuation)  
 2.remove stop words# stop words mean "you" ,"the","and" frequency and not important words
-       [clean text](/NLP/clean text.md)
+ 
+   [clean text](/NLP/clean text.md)
 
 ### 6. Vectorize--convert to numeric form
-      [Vectorize](/NLP/Vectorize.md)
+   [Vectorize](/NLP/Vectorize.md)
 
 ### 7. Machine learning algorithm--fit/train model
 
