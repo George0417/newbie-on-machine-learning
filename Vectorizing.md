@@ -1,7 +1,7 @@
 # Vectorize
-### There are mainly three methods of it
+###There are mainly three methods of it
 
-#1. Count vectorization
+# 1. Count vectorization
 Creates a document-term matrix where the entry of each cell will be a count of the number of times that word occurred in that document.
 
 
@@ -20,7 +20,7 @@ data=pd.read_csv("XXX.csv",sep="\t")
 data.columns=["label","body_text"]
 ```
 
-###Create function to remove punctuation,tokenize,remove stopwords, and stem
+### Create function to remove punctuation,tokenize,remove stopwords, and stem
 ```
 def clean_text(text):
     text="".join([word.lower()for word in text if  word not in  string.punctuation])
@@ -57,7 +57,7 @@ result
 
 
 
-#2.N-grams
+# 2.N-grams
 >create a document-term matrix where represent all combinations of adjacent words of length n in your text.
 ```
 "NLP is an interesting topic"
@@ -65,7 +65,7 @@ result
 four-gram  ["NLP is an interesting","is an interesting topic"]
 ```
 
-###Create function to remove punctuation,tokenize,remove stopwords, and stem
+### Create function to remove punctuation,tokenize,remove stopwords, and stem
 ```
 def clean_text(text):
     text="".join([word.lower()for word in text if  word not in  string.punctuation])
@@ -88,7 +88,7 @@ print(ngram_vect.get_feature_names())
 ```
 
 
-#3.Term frequency-inverse document frequency(TF-IDF)
+# 3.Term frequency-inverse document frequency(TF-IDF)
 ```
 text"I like NLP"
 tf(NLP)= #of occurance of NLP/ number of words in text message =1/3
@@ -104,7 +104,7 @@ Wi,j=tf(NLP)*log(N/df(NLP))
 >how ever when the N get larger, df(NLP) doesn't change ,the Wi,j will get larger
  so the rarer the word is , the higher the value is going to be
 
-###Create function to remove punctuation,tokenize,remove stopwords, and stem
+### Create function to remove punctuation,tokenize,remove stopwords, and stem
 the same with Count vectorization
 
 ### Apply CountVectorizer
