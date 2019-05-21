@@ -1,4 +1,4 @@
-#model of machine learning
+# model of machine learning
 
 ### 1.Regression Algorithms
 >Regression algorithm is a kind of algorithm that obtains the best combination of input features
