@@ -48,8 +48,7 @@ print("Number of null in label: {} ".format(fullcorpus["label"].isnull().sum()))
 
 
 ### 7. Machine learning algorithm--fit/train model
-
-[model of machine learning](newbie-on-machine-learning/NLP/model of machine learning.md)
+[model of machine learning](/NLP/model of machine learning.md)
 
 
 ### 8. implement it within whatever framework
