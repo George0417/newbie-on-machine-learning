@@ -1,4 +1,4 @@
-# Removing punction
+# 1. Removing punction
 
 ### punctuation---example of punctuation
 ```
@@ -24,7 +24,7 @@ label              body_text                            body_text_clean
  
 ```
  
- # Tokenization
+ # 2.Tokenization
  ### Symbolization ---splitted by symbol
  
 
@@ -45,7 +45,7 @@ result
  ham      I've been searching for % the right words     Ive been searching for the right words  [Ive,been,searching,for,the,right,words]
  
 ```
- # Remove stopwords
+ # 3.Remove stopwords
  
  
  ### example of stopwords
@@ -69,7 +69,7 @@ label              body_text                                         body_text_c
            [Ive,been,searching,for,the,right,words]               [Ive,searching,right,words]
  
 ```
-# Stem (faster as it chops off the end of word using heuristics)
+# 4.Stem (faster as it chops off the end of word using heuristics)
 ### crudely choppingoff the end of the word to leave only the  base
 
 ```
@@ -99,7 +99,7 @@ result
     [Ive,searching,right,words]                       [Ive,searching,right,words] 
 ```
 
-# Lemmatizing (more accurate)
+# 5.Lemmatizing (more accurate than stem)
 
 ```
 **Ex1**
