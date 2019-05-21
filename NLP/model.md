@@ -77,3 +77,12 @@ cv_fit=gs.fit(X_tfidf,data["label"])# X_train,Y_train
 pd.DataFrame(cv_fit.cv_results_).sort_values("mean_test_score",ascending=False)[0:5]# the former 5
 
 ```
+# 3.Model selection
+### using the best parameter to value precision/recall/Accuracy to compare both model
+
+```
+import time
+start=time.time()
+end=time.time()
+fit_time=(end-start)
+```
