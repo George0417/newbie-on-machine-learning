@@ -1,6 +1,7 @@
 # Vectorize
+### There are mainly three methods of it
 
-# Count vectorization
+#1. Count vectorization
 Creates a document-term matrix where the entry of each cell will be a count of the number of times that word occurred in that document.
 
 
@@ -56,7 +57,7 @@ result
 
 
 
-# N-grams
+#2.N-grams
 >create a document-term matrix where represent all combinations of adjacent words of length n in your text.
 ```
 "NLP is an interesting topic"
@@ -87,7 +88,7 @@ print(ngram_vect.get_feature_names())
 ```
 
 
-# Term frequency-inverse document frequency(TF-IDF)
+#3.Term frequency-inverse document frequency(TF-IDF)
 ```
 text"I like NLP"
 tf(NLP)= #of occurance of NLP/ number of words in text message =1/3
