@@ -23,7 +23,7 @@ data.columns=["label","body_text"]
 ### Create function to remove punctuation,tokenize,remove stopwords, and stem
 ```
 def clean_text(text):
-    text="".join([word.lower()for word in text if  word not in  string.punctuation])
+    text="".join([word.lower()for word in text if  word not in  string.punctuation]) #"".join([word)=join("",word)
     tokens = re.split("\W+",text)
     text =[ps.stem(word)for word  in tokens if word not in  stopwords]
     return text
