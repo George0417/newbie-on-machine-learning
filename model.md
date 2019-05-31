@@ -87,7 +87,29 @@ for ind1 in range(len(itemlist)):
  print("recommendations for item 5001\n",recolist)
  
  ```
- 
+# CLV (customer life value)
+**Data: purchase record of each months**
+```
+from sklearn.linear_model import LinearRegression
+import sklearn.metrics
 
+#Do correlation analysis
+cleaned_data.corr()["CLV"]#show the correlationship beatween months with the target variable(CLV)
+
+#Build model
+model=LinearRegression()
+model.fit(pred_train,tar_train)
+print("coefficients:\n",model.coef_)
+print("Intercept:",model.intercept_)
+
+predictions=model.predict(pred_test)
+predictions
+
+sklearn.metrics.r2_score(tar_test,predictions)
+
+#predict a new customer
+**if a new customer who in his first three months spend 100,0,50,let us use the model to predict the clv **
 
 ```
+
+
