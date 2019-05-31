@@ -109,6 +109,53 @@ sklearn.metrics.r2_score(tar_test,predictions)
 
 #predict a new customer
 **if a new customer who in his first three months spend 100,0,50,let us use the model to predict the clv **
+new_data=np.array([100,0,50,0,0,0]).reshape(1,-1)
+new_pred=model.predict(new_data)
+print("The CLV for the new customer is :&",new_pred[0])
+
+```
+# clustering
+```
+from sklearn.cluster import KMeans
+import sklearn.metrics
+
+**we will use K-means clustering group
+1.use knee test to see the optimal number of groups**
+
+# finding optimal no of clusters
+from scipy.spatial.distance import cdist
+clusters=range(1,10)
+meanDistortions=[]
+
+for k in clusters:
+    model=KMeans(n_clusters=k)
+    model.fit(clust_data)
+    prediction=model.predict(clust_data)
+    meanDistortions.append(sum(np.min(cdist(clust_data,model.cluster_centers_,"euclidean"),axis=1)))
+    
+plt.plot(clusters,meanDistortions,"bx-")
+plt.xlabel("k")
+plt.ylabel("Average distortion")
+plt.title("Selecting k with the Elbow Method")
+
+#optimal cluster is 3
+final_model=KMeans(3)
+final_model.fit(clust_data)
+prediction=final_model.predict(clust_data)
+
+raw_data["Group"]=prediction
+raw_data[["Group","Problem_type"]]
+
+#Analyze the groups
+**do a set of boxplots to see how the groups differ for various feature attributes**
+
+plt.cla()
+plt.boxplot([[raw_data["count"][raw_data.Group==0]],
+             [raw_data["count"][raw_data.Group==1]]
+             [raw_data["count"][raw_data.Group==2]]],
+             labels=("Group 1,Group 2,Group 3"))
+             
+             
 
 ```
 
