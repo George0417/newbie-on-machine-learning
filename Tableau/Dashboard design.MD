@@ -96,5 +96,24 @@ databank.worldbank.org/data/home.aspx
 2. then drop the sheet and adjust the size of it
 3.double click one of the graph then click the Format Container on the right corner and select the border. 
 
+### Quick filter
+1.back to the work sheet
+2.drag the Dimension data such like country,region,year to the filters area
+3.right click the country,apply to worksheets---all using this data source
+4.go to the dashboard,drop the horizontal to the top of the contatx
+5.go to anysheet and right click and choose quick filters and select region then drag to the top
+6.repeat it to choose the filter you need and add to the right side of the top
+7.right click the region filter then choose multiple values(dropdown)
+8.right click the region filter then choose only relevant values
+9.click the arrow in the top of right on region filter,then choose format quick filters,clikc the shading.
 
+>>change the color of the table 
+dashboard ----format----subtitle and shading
+
+### Design interactivity with parameters
+1.jump to sheet 1,under the dimension section,right click and do create parameter
+2.change data type to string,allow value to be list and write the data name on the list,such like country,region
+3.go to the dashboard ,click the arrow on the top right of graph,select parameters to which you create.
+4.create calculated field and input """IF [Dimension Selector]="country"then [country] ELSEIF [Dimension Selector]="region"then[region]END"""
+5.replace this caluculated rule into the columns
 
