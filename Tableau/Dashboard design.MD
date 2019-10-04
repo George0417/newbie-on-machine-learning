@@ -110,10 +110,34 @@ databank.worldbank.org/data/home.aspx
 >>change the color of the table 
 dashboard ----format----subtitle and shading
 
-### Design interactivity with parameters
+### Design interactivity with parameters---add filters to change the parameters
 1.jump to sheet 1,under the dimension section,right click and do create parameter
 2.change data type to string,allow value to be list and write the data name on the list,such like country,region
 3.go to the dashboard ,click the arrow on the top right of graph,select parameters to which you create.
 4.create calculated field and input """IF [Dimension Selector]="country"then [country] ELSEIF [Dimension Selector]="region"then[region]END"""
 5.replace this caluculated rule into the columns
 
+### change chart types with two graph
+1.duplate the sheet with bar and map
+2.create parameter,change data type into string
+3.change the list of values,like add bar and map in the list
+4.then you can see the new chart type in the parameters in the lift of bar
+5.clikc the map in the show me bar which can let you jump into de map graph
+6.format the values,right click and choose format,select AVG(Internet usage Ratio)color item from fields
+7.change the number(custom)to 1
+8.edit the color for area brown and click the stepped color
+9.create calculated field and input """IF [chart type]="bar"then "bar" ELSEIF [chart type]="Map"then"Map"END"""
+10.drop the chart type into the filters and select the custom values and add map
+11.right click the graph and add quick filter ,choose country.
+12.right click the label and choose the multiple values(Dropdown)
+
+### add Page into the mian dashboard
+1.right click the Y-axis and add reference line
+2.choose label to custom,Avg:<Values>
+3.drop off the show recalculated line for highlighted and choose the fill below
+4.drop the new dashbood page into the main sheet
+
+### highlight
+1.clikc the dashboard on the top and click the actions
+2.add action select highlight
+3.then select fields at the target highlighting and click the parameters
