@@ -27,3 +27,11 @@ SELECT name, area FROM world
   WHERE area BETWEEN 200000 AND 250000
   
 ```
+
+**Q3:Show the countries which have a name that includes the word 'United'**
+```
+SELECT name
+  FROM world
+ WHERE name LIKE '%United%'
+```
+
