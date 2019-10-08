@@ -46,5 +46,12 @@ select DISTINCT(player)
 from goal join game on game.id = goal.matchid and goal.teamid!='GER' and (game.team1='GER' or game.team2='GER')
 ```
 
+### Q3:Show the stadium and the number of goals scored in each stadium.
+```
+select stadium ,count(gtime)
+from goal join game on game.id = goal.matchid 
+group by stadium
+ORDER BY stadium
+```
 
 
