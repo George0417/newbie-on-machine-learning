@@ -12,6 +12,7 @@ Angola	Africa	1246700	20609294	100990000000
 ```
 
 **Q1:List all the continents - just once each.**
+>list に重複しない
 ```
 SELECT DISTINCT continent 
 FROM world
@@ -30,6 +31,7 @@ where name in ('Estonia', 'Latvia', 'Lithuania')
 ```
 SELECT continent, COUNT(name)
 FROM world
+（where）
 GROUP BY continent
 ```
 
