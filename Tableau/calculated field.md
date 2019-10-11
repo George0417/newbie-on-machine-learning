@@ -28,3 +28,10 @@ The same way on a shelf
 3.choose the calculation type to percent of total
 4.relative to first to change the order
 ```
+
+### create filters
+```
+1 go to the row area and hover the mouse pointer over the pill,click the down arrow and click the fliter
+2.click the condition tap then click the by formula option button
+3.sum([spending])>28000
+```
