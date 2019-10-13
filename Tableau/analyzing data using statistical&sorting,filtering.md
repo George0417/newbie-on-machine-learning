@@ -45,6 +45,7 @@ change the order of the property
 
 ```
 
+
 ### create a wildcard filter
 
 ```
@@ -59,4 +60,17 @@ change the order of the property
 2.check by field and choose total sum >=28000
  
 ```
+### create a top filter
+```
+1.when you open a filter box, you can click top tab
+2.choose by field ---top or bottom then input top 10 or top 5 and apply
+```
 
+### filter data using parameters
+```
+1.go down to the measure area and click the spending pills down arrow
+2.create parameters
+3.to creat a control like range 1-7 and apply
+4.drag the iteam you want to filter to the filter and choose top tab
+5.select the available choices.
+```
