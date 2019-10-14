@@ -21,4 +21,13 @@
 ### 7.WHERE CustomerName NOT LIKE 'a%'
 >a CustomerName that does NOT start with "a"
 
+### 8.WHERE City LIKE '[bsp]%'
+>a City starting with "b", "s", or "p"
+
+### 9.WHERE City LIKE '[a-c]%'
+>a City starting with "a", "b", or "c"
+
+### 10.WHERE City LIKE '[!bsp]%'
+>a City NOT starting with "b", "s", or "p"
+
 ```
