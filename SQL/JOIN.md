@@ -1,5 +1,13 @@
 # JOIN
 
+```
+LEFT JOINは左側のテーブルの全レコードと、右側のテーブルの対応するレコードを取得する。
+RIGHT JOINは右側のテーブルの全レコードと、左側のテーブルの対応するレコードを取得する。
+INNER JOINは対応するレコードがあるレコードだけを取得する。
+FULL OUTER JOINは対応するレコードがあってもなくてもすべてのレコードを取得する。
+
+```
+
 ### table of game
 ```
 id	mdate	stadium	team1	team2
