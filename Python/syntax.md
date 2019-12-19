@@ -194,4 +194,36 @@ myfamily = {
 ```
 >> Note that range(6) is not the values of 0 to 6, but the values 0 to 5
 
+### Arbitrary Arguments
+**If the number of arguments is unknown, add a * before the parameter name:**
+```
+def my_function(*kids):
+  print("The youngest child is " + kids[2])
+
+my_function("Emil", "Tobias", "Linus")
+
+The youngest child is Linus
+```
+
+### split() 
+```
+import re
+
+str = "The rain in Spain"
+x = re.split("\s", str)
+print(x)
+
+['The', 'rain', 'in', 'Spain']
+```
+
+### sub()
+```
+import re
+
+str = "The rain in Spain"
+x = re.sub("\s", "9", str)
+print(x)
+The9rain9in9Spain
+```
+
 
